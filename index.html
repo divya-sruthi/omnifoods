@@ -253,22 +253,68 @@
         text-transform: uppercase;
         margin-bottom: 20px;
       }
-      .city-h{
-          display: flex;
-          align-items: center;
+      .city-h {
+        display: flex;
+        align-items: center;
       }
-      .city-h ion-icon{
-          color: #e67e22;
-          font-size: 22px;
-          font-weight: 300;
-          margin-right: 10px;
+      .city-h ion-icon {
+        color: #e67e22;
+        font-size: 22px;
+        font-weight: 300;
+        margin-right: 10px;
       }
-      .city-h a{
-          color: #e67e22;
+      .city-h a {
+        color: #e67e22;
       }
-      .city-h a:hover{
-          text-decoration: transparent;
-          color: black;
+      .city-h a:hover {
+        text-decoration: transparent;
+        color: black;
+      }
+      .customer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 80px 0;
+      }
+      .wrap-main {
+        font-weight: 300;
+      }
+      .customer-bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(/img/back-customers.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .customer-wrap h2 {
+        color: white;
+        font-weight: 100;
+      }
+      .customer-content-wrap {
+        display: flex;
+        color: #fff;
+      }
+      .customer-wrap {
+        font-size: 20px;
+      }
+      .customer-main {
+        margin: 1% 0 1% 1.6%;
+        font-style: italic;
+      }
+      .customer-img {
+        display: flex;
+        align-items: center;
+      }
+
+      .customer-img img {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin-right: 20px;
       }
     </style>
   </head>
@@ -426,7 +472,8 @@
               <ion-icon name="star"></ion-icon>60+ top chefs
             </div>
             <div class="city-h">
-              <ion-icon name="logo-twitter"></ion-icon><a href="#">@Omnifood_lx</a>
+              <ion-icon name="logo-twitter"></ion-icon
+              ><a href="#">@Omnifood_lx</a>
             </div>
           </div>
         </div>
@@ -447,7 +494,8 @@
               <ion-icon name="star"></ion-icon>160+ top chefs
             </div>
             <div class="city-h">
-              <ion-icon name="logo-twitter"></ion-icon><a href="#">@Omnifood_sf</a>
+              <ion-icon name="logo-twitter"></ion-icon
+              ><a href="#">@Omnifood_sf</a>
             </div>
           </div>
         </div>
@@ -467,7 +515,8 @@
               <ion-icon name="star"></ion-icon>110+ top chefs
             </div>
             <div class="city-h">
-              <ion-icon name="logo-twitter"></ion-icon><a href="#">@Omnifood_berlin</a>
+              <ion-icon name="logo-twitter"></ion-icon
+              ><a href="#">@Omnifood_berlin</a>
             </div>
           </div>
         </div>
@@ -486,7 +535,63 @@
               <ion-icon name="star"></ion-icon>50+ top chefs
             </div>
             <div class="city-h">
-              <ion-icon name="logo-twitter"></ion-icon><a href="#">@Omnifood_london</a>
+              <ion-icon name="logo-twitter"></ion-icon
+              ><a href="#">@Omnifood_london</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customer-bg">
+      <div class="customer-wrap">
+        <div class="wrap-main">
+          <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+        </div>
+        <div class="test-line"></div>
+        <div class="customer-content-wrap">
+          <div class="customer-main">
+            <q></q>
+            <p>
+              Omnifood is just awesome! I just launched a startup which leaves
+              me with no time for cooking, so Omnifood is a life-saver. Now that
+              I got used to it, I couldn't live without my daily meals!
+            </p>
+            <div class="customer-img">
+              <img
+                src="https://randomuser.me/api/portraits/men/8.jpg"
+                alt="profile-pic"
+              />
+              <p>Alberto Duncan</p>
+            </div>
+          </div>
+          <div class="customer-main">
+            <q></q>
+            <p>
+              Inexpensive, healthy and great-tasting meals, delivered right to
+              my home. We have lots of food delivery here in Lisbon, but no one
+              comes even close to Omifood. Me and my family are so in love!
+            </p>
+            <div class="customer-img">
+              <img
+                src="https://randomuser.me/api/portraits/women/12.jpg"
+                alt="profile-pic"
+              />
+              <p>Joana Silva</p>
+            </div>
+          </div>
+          <div class="customer-main">
+            <q></q>
+            <p>
+              I was looking for a quick and easy food delivery service in San
+              Franciso. I tried a lot of them and ended up with Omnifood. Best
+              food delivery service in the Bay Area. Keep up the great work!
+            </p>
+            <div class="customer-img">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="profile-pic"
+              />
+              <p>Samantha Stewart</p>
             </div>
           </div>
         </div>
