@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood</title>
     <style>
+      :root {
+        --title-size: 20px;
+      }
       html,
       body {
         margin: 0;
@@ -316,6 +319,88 @@
         border-radius: 50%;
         margin-right: 20px;
       }
+      .price-bg {
+        background-color: #d6d6d6;
+      }
+      .price-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+      .price-title h2 {
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .price-main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .price-card {
+        background-color: #fff;
+        width: 30%;
+      }
+      .price-card-head {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 110%;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.733);
+        padding: 20px;
+        height: 100px;
+      }
+
+      .price-card-head p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .price-card-head h2 {
+        font-weight: 100;
+        font-size: 28px;
+        margin-top: 10px;
+        margin: 0;
+      }
+      .small-text {
+        font-size: 12px;
+        text-transform: none;
+      }
+
+      .head-small-text {
+        font-size: 50%;
+        text-transform: none;
+        color: #cf6d17;
+      }
+
+      .price-card-body {
+        padding: 20px;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.733);
+      }
+
+      .price-card-body ul li {
+        margin-bottom: 20px;
+        font-size: 110%;
+      }
+      .price-card-button {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .address-wrap-head {
+        margin-bottom: 50px;
+      }
+      .address-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+      }
+      .address-wrap h2 {
+        font-weight: 100;
+      }
     </style>
   </head>
   <body>
@@ -593,6 +678,109 @@
               />
               <p>Samantha Stewart</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-bg">
+      <div class="price-wrap">
+        <div class="price-title">
+          <h2>START EATING HEALTHY TODAY</h2>
+        </div>
+        <div class="test-line"></div>
+        <div class="price-main">
+          <div class="price-card">
+            <div class="price-card-head">
+              <p>Premium</p>
+              <h2>$399 / <span class="head-small-text">month</span></h2>
+              <p class="small-text">That's only 13.30$ per meal</p>
+            </div>
+            <div class="price-card-body">
+              <ul>
+                <li>1 meal every day</li>
+                <li>Order 24/7</li>
+                <li>Access to newest creations</li>
+                <li>Free delivery</li>
+              </ul>
+            </div>
+            <div class="price-card-button landing">
+              <button>Sign up now</button>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-head">
+              <p>Pro</p>
+              <h2>$149 / <span class="head-small-text">month</span></h2>
+              <p class="small-text">That's only 14.90$ per meal</p>
+            </div>
+            <div class="price-card-body">
+              <ul>
+                <li>1 meal 10 days/month</li>
+                <li>Order 24/7</li>
+                <li>Access to newest creations</li>
+                <li>Free delivery</li>
+              </ul>
+            </div>
+            <div class="price-card-button landing">
+              <button>Sign up now</button>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-head">
+              <p>STARTER</p>
+              <h2>$19 / <span class="head-small-text">meal</span></h2>
+            </div>
+            <div class="price-card-body">
+              <ul>
+                <li>1 meal</li>
+                <li>Order from 8 am to 12 pm</li>
+                <li></li>
+                <li>Free delivery</li>
+              </ul>
+            </div>
+            <div class="price-card-button landing">
+              <button>Sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="address-wrap-head">
+      <div class="address-main">
+        <div class="address-wrap">
+          <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
+        </div>
+        <div class="test-line"></div>
+        <div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div>
+            <label for="email">How did you find us?</label>
+            <select>
+              <option value="friends">Friends</option>
+              <option value="friends">Search Engine</option>
+              <option value="friends">Advertisement</option>
+              <option value="friends">Others</option>
+            </select>
+          </div>
+          <div>
+            <label for="news">Newsletter</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label>Drop us a line</label>
+            <textarea placeholder="Your Message"></textarea>
+          </div>
+          <div>
+            <button>Send it</button>
           </div>
         </div>
       </div>
