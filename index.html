@@ -401,6 +401,70 @@
       .address-wrap h2 {
         font-weight: 100;
       }
+      .form-wrap {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-weight: 100;
+      }
+      .form-wrap input {
+        width: 300px;
+      }
+      .form-wrap select {
+        width: 310px;
+      }
+      .form-wrap textarea {
+        width: 300px;
+      }
+      .button-flex {
+        display: flex;
+        justify-content: center;
+      }
+      .checkbox-margin {
+        width: 20px !important;
+      }
+      .footer {
+        background-color: #414040;
+      }
+      .footer-wrap {
+        color: #fff;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-main ul,
+      .footer-icons ul {
+        display: flex;
+        list-style: none;
+        color: #969696;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .footer-main ul li {
+        margin-right: 20px;
+      }
+      .footer-icons ul li {
+        margin-right: 20px;
+      }
+      .footer-main ul li:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+      .ion-test:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+      .copy p {
+        margin-bottom: 0;
+        color: #969696;
+        text-align: center;
+        padding-bottom: 40px;
+      }
     </style>
   </head>
   <body>
@@ -754,15 +818,15 @@
         </div>
         <div class="test-line"></div>
         <div>
-          <div>
+          <div class="form-wrap">
             <label for="name">Name</label>
             <input type="text" placeholder="Your Name" />
           </div>
-          <div>
+          <div class="form-wrap">
             <label for="email">Email</label>
             <input type="email" placeholder="Your Email" />
           </div>
-          <div>
+          <div class="form-wrap">
             <label for="email">How did you find us?</label>
             <select>
               <option value="friends">Friends</option>
@@ -771,17 +835,58 @@
               <option value="friends">Others</option>
             </select>
           </div>
-          <div>
+          <div class="form-wrap">
             <label for="news">Newsletter</label>
-            <input type="checkbox" />
+            <div>
+              <input
+                type="checkbox"
+                value="yes, please"
+                class="checkbox-margin"
+              />
+              <label>Yes Please</label>
+            </div>
           </div>
-          <div>
+          <div class="form-wrap">
             <label>Drop us a line</label>
             <textarea placeholder="Your Message"></textarea>
           </div>
-          <div>
+          <div class="landing button-flex">
             <button>Send it</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="footer-flex">
+          <div class="footer-main">
+            <ul>
+              <li>About us</li>
+              <li>Blog</li>
+              <li>Press</li>
+              <li>Ios App</li>
+              <li>Android app</li>
+            </ul>
+          </div>
+          <div class="footer-icons">
+            <ul>
+              <li>
+                <ion-icon name="logo-facebook" class="ion-test"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-twitter" class="ion-test alt"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-googleplus" class="ion-test"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-instagram" class="ion-test"></ion-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          <p>Copyright ©2015 by Omnifood. All rights reserved.</p>
         </div>
       </div>
     </div>
